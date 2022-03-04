@@ -1,0 +1,120 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 25px;
+  direction:rtl;
+  font-family: 'Assistant', sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  transition: all 1s;
+  padding: 50px;
+}
+
+.btn {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  top: 0;
+  z-index: 999;
+  font-size: 100px;
+  display: none;
+}
+
+.btn.show {
+  display: block;
+}
+
+.x-left-close {
+  color: #fff;
+  font-size: 45px;
+  right: 25px;
+}
+
+.x-right-close {
+  font-size: 45px;
+  left: 25px;
+}
+
+.left {
+  background-color: black;
+}
+
+.left.expand {
+  flex-direction: column;
+  overflow: auto;
+}
+
+.left .title {
+  color: #fff;
+}
+
+.left .text-container {
+  color: #fff;
+}
+
+.right.expand {
+  flex-direction: column;
+  overflow: auto;
+}
+
+.title {
+  font-size: 80px;
+  text-align: center;
+}
+
+.text-container {
+  transition: all 1s ease;
+  display: none;
+  font-size: 18pt;
+}
+
+.expand {
+  width: 95vw;
+  transition: all 1s ease;
+  align-items: initial;
+}
+
+.shrink {
+  width: 5vw;
+  transition: all 1s ease;
+}
+
+.shrink .title {
+  font-size: 30px;
+}
+
+.black-accordion .accordion-button  {
+    background-color: #000;
+    color: #fff;
+}
+
+.black-accordion .accordion-button::after  {
+  background-color: #fff;
+}
+
+.black-accordion .accordion-button:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 55%);
+}
+
+.black-accordion .accordion-item  {
+  background-color: #000;
+  border-color: #fff;
+}
+
